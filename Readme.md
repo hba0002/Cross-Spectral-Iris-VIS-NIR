@@ -6,6 +6,7 @@ To load a dataset, first ensure it is in the correct format.
 
 ```
 Dataset_name
+For Training:
     NIR
 	    class 1
 		    NIR image 1
@@ -28,7 +29,30 @@ Dataset_name
 		    ...
 	    ...
     ```
+For Testing:
+    NIR_Valid
+	    class 1
+		    NIR image 1
+		    NIR image 2
+		    ...
+	    class 2
+		    NIR image 1
+		    NIR image 2
+		    ...
+	    ...
 
+    VIS_Valid
+	    class 1
+		    VIS image 1
+		    VIS image 2
+		    ...
+	    class 2
+		    VIS image 1
+		    VIS image 2
+		    ...
+	    ...
+    ```
+```
 Ensure that each image in the NIR folder has a corresponding image in VIS folder, and there are the same amount of class folders for each. If the folder sizes are different the model will not work.
 
 ## Training
