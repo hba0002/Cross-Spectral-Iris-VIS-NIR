@@ -79,6 +79,7 @@ datasets_to_run=["Dataset"]
 
 Ensure the config variable is set to the correct arguments, change these arguments to run in your own system:
 
+- Linux - True if running on Linux system, False if running on Windows
 - modality - 'cropped' if using 256x256 iris images, 'normalized' if using 64x512 normalized iris images
 - VIS_folder/NIR_folder - locations for each dataset relative to base directory
 - checkpt_load - where the model checkpoint will be loaded from
